@@ -224,7 +224,7 @@ font:inherit;font-size:14px;padding:11px 17px;outline:none;transition:.25s}
 .cta{padding:clamp(28px,4vw,46px);background:var(--navy)!important;border-color:rgba(255,255,255,.1)!important}
 .sig{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:22px;font-family:"IBM Plex Mono";font-size:12.5px;color:var(--dim)}
 footer{padding:26px 0 60px;font-family:"IBM Plex Mono";font-size:10.5px;color:var(--faint);letter-spacing:.05em}
-.edit{border-bottom:1px dashed var(--edit);color:var(--edit);outline:none;cursor:text;padding:0 2px;border-radius:3px}
+.edit{outline:none;cursor:text;padding:0 2px;border-radius:3px}
 .edit:focus{background:rgba(196,122,44,.12)}
 .edit.off{border-bottom:0;color:inherit}
 #toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);z-index:60;background:var(--navy);color:#f3f7fb;
@@ -307,9 +307,6 @@ section{page-break-inside:avoid;padding:36px 0}.glass{box-shadow:none!important}
       </div>
     </div>
   </div>
-
-  <div class="hint"><span>Amber fields are editable — click, change, then Save as PDF.</span>
-    <button onclick="document.querySelectorAll('.edit').forEach(e=>e.classList.toggle('off'))">hide markers</button></div>
 </div>
 </section>
 
